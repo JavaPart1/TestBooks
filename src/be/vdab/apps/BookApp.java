@@ -11,5 +11,12 @@ public class BookApp {
         Book boek = new Book("Mooi Boek",auteur,27.95);
         // toon gegevens
         System.out.println(boek);
+        // getters & setters
+        auteur.setGender('p');
+        System.out.println(auteur);
+        boek.setName("Slecht boek");
+        System.out.println(boek);
+        auteur.setName(auteur.getName()+"tjes");
+        System.out.println(auteur);
     }
 }

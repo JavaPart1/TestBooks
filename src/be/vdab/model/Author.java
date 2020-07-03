@@ -5,14 +5,19 @@ public class Author {
     private String email;
     private char gender;
 
-    public Author(String name) {
-        this.name = name;
-    }
-
     public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email;
-        this.gender = gender;
+        this.gender = checkGender(gender);
+    }
+
+    public char checkGender(char gend){
+        if (gender == 'm' & gender == 'v'){
+            return gend;
+
+        }else{
+            return 'o';
+        }
     }
 
     public String getName() {
@@ -23,8 +28,16 @@ public class Author {
         return email;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public char getGender() {
         return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = checkGender(gender);
     }
 
     @Override
