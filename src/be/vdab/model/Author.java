@@ -11,8 +11,9 @@ public class Author {
         this.gender = checkGender(gender);
     }
 
+    // What's this for?
     public char checkGender(char gend){
-        if (gender == 'm' & gender == 'v'){
+        if (gender == 'm' & gender == 'v'){ // Why the &?
             return gend;
 
         }else{
